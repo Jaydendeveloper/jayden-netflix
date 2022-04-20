@@ -19,7 +19,7 @@ useEffect(() => {
 console.log(movie)
 
   return (
-    <div className="flex flex-col space-y-2 py-[45%] md:py-20 md:space-y-4 lg: h-[65vh] lg:justify-end lg:pb-12">
+    <div className="flex flex-col space-y-2 py-20 md:py-20 md:space-y-4 lg: h-[65vh] lg:justify-end lg:pb-12">
         <div className="absolute top-0 left-0 -z-10 h-[95vh] w-screen">
             <Image
             src={`${baseUrl}${movie?.backdrop_path || movie?.poster_path}`}
@@ -28,7 +28,7 @@ console.log(movie)
             />
         </div>
         <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">{movie?.title || movie?.name || movie?.original_name}</h1>
-        <p className="bannerText text-2 max-w-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xd lg:text-2xl">{movie?.overview}</p>
+        <p className="bannerText text-md max-w-xs text-shadow-md md:max-w-lg md:text-lg lg:max-w-2xd lg:text-2xl">{movie?.overview}</p>
     
         <div className="flex space-x-3">
             <button className="bannerButton bg-white text-black"> <FaPlay  className="h-4 w-4 text-black md:h-7 md:w-7"/>Play</button>
