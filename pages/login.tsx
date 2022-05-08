@@ -55,8 +55,9 @@ function Login() {
         </div>
 
         <button type="submit" className="w-full rounded bg-[#e50914] py-3 font-semibold" onClick={() => setLogin(true)}>Sign in</button>
-        <div className="text-[gray]">New to Netflix?
+        <div className="text-[gray] text-center">New to Netflix?
         <button type="submit" className="w-full rounded text-white bg-[#e50914] py-3 font-semibold" onClick={() => setLogin(false)}>Register</button>
+        This is not the official netflix, just a clone.
         </div>
       </form>
     </div>
